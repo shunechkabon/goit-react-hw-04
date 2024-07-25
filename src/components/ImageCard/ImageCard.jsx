@@ -4,8 +4,8 @@ const ImageCard = ({ image, onClick }) => {
     const { urls, alt_description } = image;
 
     return (
-        <div onClick={onClick} className={s.card}>
-            <img src={urls.small} alt={alt_description} />
+        <div className={s.card}>
+            <img src={urls.small} alt={alt_description} onClick={onClick}/>
         </div>
     );
 };
